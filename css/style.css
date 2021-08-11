@@ -1,0 +1,246 @@
+:root {
+  --lightred: #fa2c2c;
+  --darkred: #8b0404;
+}
+
+body {
+  background-color: #E3E3E3;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flexbox;
+}
+
+header {
+  overflow: hidden;
+  background-color: var(--darkred);
+}
+
+header ul {
+  margin-right: 4rem;
+}
+
+header li {
+  float: left;
+  color: var(--lightred);
+  text-align: center;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+  line-height: 7rem;
+  text-decoration: underline;
+  text-decoration-thickness: .15rem;
+}
+
+a:link {
+  color: var(--lightred);
+}
+
+a:visited {
+  color: var(--lightred)
+}
+
+header h1 {
+  background-color: var(--lightred);
+  color: var(--darkred);
+  float: left;
+  font-size: 2rem;
+  line-height: 4.7rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 1.3rem;
+  border-top: 1rem solid var(--darkred);
+  border-bottom: 1rem solid var(--darkred);
+}
+
+
+header li:hover {
+  color: #687FCC;
+  font-size: 1.3rem;
+}
+
+.header-right {
+  float: right;
+}
+
+figure {
+  position: relative;
+}
+
+img {
+  border: .7rem solid var(--lightred);
+  width: 100%;
+  height: 48rem;
+}
+
+figcaption {
+  background-color: var(--lightred);
+  color: var(--darkred);
+  font-size: 3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  padding: 1.5rem;
+}
+
+aside {
+  float: left;
+  padding: 5rem;
+}
+
+#about-head {
+  color: var(--darkred);
+  font-size: 4rem;
+  text-align: right;
+  width: 15rem;
+  padding-bottom: 6rem;
+  padding-right: 2rem;
+  margin-bottom: 5rem;
+  border-right: .3rem solid var(--lightred);
+}
+
+.work-head {
+  padding-bottom: 10rem;
+}
+
+.about-text {
+  padding: 6rem;
+  margin-bottom: 1.7rem;
+  font-size: 1.4rem;
+  color: var(--darkred);
+}
+
+#work-head {
+  color: var(--darkred);
+  font-size: 4rem;
+  text-align: right;
+  width: 15rem;
+  padding-bottom: 79rem;
+  padding-right: 2rem;
+  margin-bottom: 5rem;
+  border-right: .3rem solid var(--lightred);
+}
+
+.stargazer-img {
+  width: 75%;
+  height: 40rem;
+}
+
+.stargazer-figcap {
+  padding: 2rem;
+  top: 65%;
+  left: 25rem;
+}
+
+.figcaption-surf-sm {
+  font-size: 2rem;
+}
+
+.stargazer:hover .stargazer-img {
+  border: .7rem solid var(--darkred);
+}
+
+.stargazer:hover .stargazer-figcap {
+  background-color: var(--darkred);
+  color: var(--lightred);
+}
+
+.longrides-img {
+  width: 89.2rem;
+  height: 20rem;
+}
+
+.longrides-figcap {
+  padding: 1.5rem;
+  top: 10rem;
+  left: 96rem;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+.figcaption-longrides-sm {
+  font-size: 1.5rem;
+}
+
+.longrides:hover .longrides-img {
+  border: .7rem solid var(--darkred);
+}
+
+.longrides:hover .longrides-figcap {
+  background-color: var(--darkred);
+  color: var(--lightred);
+}
+
+.refactor-img {  
+  width: 89.2rem;
+  height: 20rem;
+}
+
+.refactor-figcap {
+  top: 9rem;
+  left: 99rem;
+}
+
+.figcaption-refactor-sm {
+  font-size: 1.5rem;
+}
+
+.refactor:hover .refactor-img {
+  border: .7rem solid var(--darkred);
+}
+
+.refactor:hover .refactor-figcap {
+  background-color: var(--darkred);
+  color: var(--lightred);
+}
+
+#contact-head {
+  color: var(--darkred);
+  font-size: 4rem;
+  text-align: right;
+  width: 15rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 5rem;
+  border-right: .3rem solid var(--lightred);
+}
+
+.contacts {
+  font-size: 2rem;
+  margin-top: 10rem;
+}
+
+.contacts li {
+  display: inline;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  text-decoration: underline;
+  text-decoration-thickness: .3rem;
+  color: var(--darkred);
+}
+
+.contacts li:hover {
+  color: #cc6868;
+  text-decoration-thickness: .2rem;
+}
+
+footer {
+  margin-top: 12rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+  .header-right {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+}    
